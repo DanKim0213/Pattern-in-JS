@@ -1,0 +1,25 @@
+{
+  "name": "patterninjs",
+  "version": "1.0.0",
+  "description": "Design patterns implemented in JavaScript ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require babel-core/register",
+    "test-with-coverage": "nyc --reporter=text mocha --require babel-core/register"
+  },
+  "keywords": [
+    "design",
+    "patterns",
+    "clone"
+  ],
+  "author": "Dan",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.3.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0"
+  }
+}
