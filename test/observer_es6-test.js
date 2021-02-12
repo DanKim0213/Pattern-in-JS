@@ -11,12 +11,6 @@ function register(p, f, t) {
     return p;
 }
 
-// describe('msg', suite-fn(...it('msg', fn())));
-// suite means a set of connected rooms. 
-// room in this context means "it". 
-// i.e. "describe a suite of it"
-// The reason why mocha needs its function as an arg is
-// we need to define the behavior of our class on our own. 
 describe('Observer es6 test', () => {
     it('Subscribers are triggered', () => {
         let product = register(new Product(), new Fees(), new Profit());
