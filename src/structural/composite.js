@@ -12,7 +12,7 @@ class Equipment {
     setName(name) {
         this.name = name;
     }
-} // TODO: getter and setter
+} // TODO: what looks like getter and setter
 
 // --- composite ---
 class Composite extends Equipment {

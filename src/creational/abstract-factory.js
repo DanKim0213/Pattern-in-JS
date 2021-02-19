@@ -1,4 +1,4 @@
-// TODO: export a function?!?!
+// TODO: what is the diff between return battleDroidFactory vs return battleDroidFactory()??
 function droidProducer(kind) {
     if (kind === 'battle') return battleDroidFactory;
     return pilotDroidFactory;

@@ -1,5 +1,4 @@
 const expect = require('chai').expect;
-// const droidProducer = require('../src/creational/abstract-factory');
 import droidProducer6 from '../src/creational/abstract-factory';
 
 describe('abstract factory test', () => {

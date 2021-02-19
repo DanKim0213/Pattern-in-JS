@@ -27,7 +27,7 @@ class Delivered extends OrderStatus {
     }
 }
 
-// TODO: note plz
+// TODO: next() method defines next state
 class Order {
     constructor() {
         this.state = new WaitingForPayment();
