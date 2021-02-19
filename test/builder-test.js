@@ -1,17 +1,19 @@
 const expect = require('chai').expect;
-const RequestBuilder = require('../src/creational/builder/builder');
+import RequestBuilder from '../src/creational/builder';
 
-describe('builder test', () => {
+describe('builder es6 test', () => {
     it('sanity', () => {
-        var requestBuilder = new RequestBuilder();
-        var request = requestBuilder
-            .forUrl('https://something/users')
-            .useMethod('GET')
+        const requestBuilder = new RequestBuilder();
+        const url = 'https://something/users';
+        const method = 'GET';
+        const request = requestBuilder
+            .forUrl(url)
+            .useMethod(method)
             .payload(null)
             .build();
-
-        expect(request.method).to.equal('GET');
-        expect(request.url).to.equal('https://something/users');
+        
+        expect(request.method).to.equal(method);
         expect(request.payload).to.be.null;
-    });
-});
+        expect(request.url).to.equal(url);
+    })
+})

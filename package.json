@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --require babel-core/register",
-    "test-notes": "mocha test/notes/ --require babel-core/register",
+    "test-syntax": "mocha test/syntax-es6/ --require babel-core/register",
     "test-with-coverage": "nyc --reporter=text mocha --require babel-core/register"
   },
   "keywords": [

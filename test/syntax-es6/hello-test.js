@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
-const Person = require('../../src/notes/hello');
-import Person_es6 from '../../src/notes/hello';
+const Person = require('../../src/syntax-es6/hello');
+import Person_es6 from '../../src/syntax-es6/hello';
 
 
 // describe('msg', suite-fn(...it('msg', fn())));
